@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import Producto from './pages/Producto';
@@ -40,6 +41,7 @@ export default function App() {
             </Routes>
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
       </CartProvider>
     </BrowserRouter>
