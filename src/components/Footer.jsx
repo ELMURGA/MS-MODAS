@@ -1,6 +1,26 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Youtube, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+
+const FacebookIcon = () => (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+  </svg>
+);
+
+const InstagramIcon = () => (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+  </svg>
+);
+
+const YoutubeIcon = () => (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+  </svg>
+);
 
 const TikTokIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -61,11 +81,11 @@ export default function Footer() {
             <div className="flex space-x-3">
               <a href="https://www.facebook.com/share/1A6eV5hXpK/" target="_blank" rel="noreferrer" aria-label="Facebook"
                 className="w-9 h-9 border border-stone-700 flex items-center justify-center text-stone-400 hover:text-white hover:border-white transition-colors">
-                <Facebook size={15} />
+                <FacebookIcon />
               </a>
               <a href="https://www.instagram.com/msmodas.com_" target="_blank" rel="noreferrer" aria-label="Instagram"
                 className="w-9 h-9 border border-stone-700 flex items-center justify-center text-stone-400 hover:text-white hover:border-white transition-colors">
-                <Instagram size={15} />
+                <InstagramIcon />
               </a>
               <a href="https://www.tiktok.com/@ms_modas" target="_blank" rel="noreferrer" aria-label="TikTok"
                 className="w-9 h-9 border border-stone-700 flex items-center justify-center text-stone-400 hover:text-white hover:border-white transition-colors">
@@ -73,7 +93,7 @@ export default function Footer() {
               </a>
               <a href="https://www.youtube.com/@msmodastotana" target="_blank" rel="noreferrer" aria-label="YouTube"
                 className="w-9 h-9 border border-stone-700 flex items-center justify-center text-stone-400 hover:text-white hover:border-white transition-colors">
-                <Youtube size={15} />
+                <YoutubeIcon />
               </a>
             </div>
           </div>

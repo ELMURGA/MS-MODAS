@@ -1,5 +1,19 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, Instagram, Facebook } from 'lucide-react';
+import { Mail, Clock, Send } from 'lucide-react';
+
+const FacebookIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+  </svg>
+);
+
+const InstagramIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+  </svg>
+);
 
 const TikTokIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -60,8 +74,8 @@ export default function Contacto() {
               <p className="text-xs uppercase tracking-[0.22em] text-stone-400 mb-4">Redes sociales</p>
               <div className="flex gap-3">
                 {[
-                  { href: 'https://www.facebook.com/share/1A6eV5hXpK/', icon: <Facebook size={15} />, label: 'Facebook' },
-                  { href: 'https://www.instagram.com/msmodas.com_', icon: <Instagram size={15} />, label: 'Instagram' },
+                  { href: 'https://www.facebook.com/share/1A6eV5hXpK/', icon: <FacebookIcon />, label: 'Facebook' },
+                  { href: 'https://www.instagram.com/msmodas.com_', icon: <InstagramIcon />, label: 'Instagram' },
                   { href: 'https://www.tiktok.com/@ms_modas', icon: <TikTokIcon />, label: 'TikTok' },
                 ].map(s => (
                   <a key={s.label} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label}
