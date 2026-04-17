@@ -67,9 +67,11 @@ export default function Navbar() {
               to="/"
               className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:left-auto"
             >
-              <span className="font-serif text-[1.35rem] tracking-[0.28em] uppercase font-bold text-[#0a0908] select-none">
-                MS Modas
-              </span>
+              <img
+                src="/img/logo.png"
+                alt="MS Modas"
+                className="h-8 w-auto object-contain select-none"
+              />
             </Link>
 
             {/* Desktop links */}
