@@ -36,9 +36,7 @@ export default function Navbar() {
       <div className="bg-[#0a0908] text-white text-center py-2.5 text-[10px] tracking-[0.2em] uppercase">
         <span className="opacity-70">Especial liquidación&nbsp;&nbsp;·&nbsp;&nbsp;</span>
         <span className="font-semibold">50% dto. en toda la web</span>
-        <span className="opacity-70">&nbsp;&nbsp;·&nbsp;&nbsp;Código:&nbsp;</span>
-        <span className="border border-white/40 px-1.5 py-0.5 font-bold tracking-widest">MS50</span>
-        <span className="opacity-70">&nbsp;&nbsp;·&nbsp;&nbsp;Tallas 46–56</span>
+        <span className="opacity-70">&nbsp;&nbsp;·&nbsp;&nbsp;Tallas 42–56</span>
       </div>
 
       {/* Main Nav */}

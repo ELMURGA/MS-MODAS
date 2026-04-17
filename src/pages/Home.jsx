@@ -4,7 +4,7 @@ import { ArrowRight, Truck, RotateCcw, Ruler, CreditCard } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
 
-const marqueeText = 'NUEVA COLECCIÓN · TALLAS 46–56 · ENVÍOS A TODA ESPAÑA · ESPECIAL LIQUIDACIÓN · CÓDIGO MS50 · ';
+const marqueeText = 'NUEVA COLECCIÓN · TALLAS 42–56 · ENVÍOS A TODA ESPAÑA · ESPECIAL LIQUIDACIÓN · CÓDIGO MS50 · ';
 
 const heroSlides = [
   {
@@ -17,7 +17,7 @@ const heroSlides = [
     img: '/img/hero2.jpg',
     tag: 'Especial liquidación · Código MS50',
     title: '50% de\ndescuento',
-    sub: 'Hasta el domingo a las 23:59h · Tallas 46–56 · Envíos a toda España.',
+    sub: 'Hasta el domingo a las 23:59h · Tallas 42–56 · Envíos a toda España.',
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Home() {
     <div className="bg-[#f9f7f4]">
 
       {/* Hero Carousel */}
-      <section className="relative h-[92vh] min-h-140 overflow-hidden bg-[#0a0908]">
+      <section className="relative w-full overflow-hidden bg-[#0a0908]" style={{ aspectRatio: '1920/550', maxHeight: '90vh', minHeight: '320px' }}>
         {/* Slides */}
         {heroSlides.map((slide, i) => (
           <div
@@ -58,13 +58,13 @@ export default function Home() {
             <img
               src={slide.img}
               alt={`MS Modas slide ${i + 1}`}
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-contain"
               style={{
-                transform: i === current ? 'scale(1.04)' : 'scale(1)',
+                transform: i === current ? 'scale(1.03)' : 'scale(1)',
                 transition: 'transform 6s ease-out',
               }}
             />
-            <div className="absolute inset-0 bg-black/45" />
+            <div className="absolute inset-0 bg-black/25" />
           </div>
         ))}
 
